@@ -21,6 +21,10 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Virtus | Tradición & Honor",
   description: "Editorial sobre masculinidad virtuosa, historia y valores atemporales.",
+  icons: {
+    icon: "/images/logo.webp",
+    apple: "/images/logo.webp",
+  },
 };
 
 export default function RootLayout({

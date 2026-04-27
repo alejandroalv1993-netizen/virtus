@@ -40,11 +40,10 @@ export default function Hero3D() {
         <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-background/40" />
         
         <h1
-          className="serif font-black select-none leading-none text-center"
+          className="serif font-black select-none leading-none text-center text-foreground/[0.08]"
           style={{
             fontSize: "clamp(5rem, 18vw, 16rem)",
             letterSpacing: "-0.04em",
-            color: "rgba(26,26,26,0.1)",
           }}
         >
           VIRTUS
