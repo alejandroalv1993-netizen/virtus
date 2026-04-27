@@ -75,10 +75,8 @@ const CategoryCard = React.forwardRef<HTMLDivElement, CategoryCardProps>(
 
           {/* Bottom Section: Button (revealed on hover) */}
           <div className="absolute -bottom-20 left-0 w-full p-8 opacity-0 transition-all duration-500 ease-in-out group-hover:bottom-0 group-hover:opacity-100">
-            <Button asChild variant="outline" className="w-full bg-white text-black hover:bg-accent hover:text-white border-none h-14 text-xs uppercase tracking-widest font-bold">
-              <Link href={href}>
-                Explorar Pilar <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+            <Button render={<Link href={href} />} variant="outline" className="w-full bg-white text-black hover:bg-accent hover:text-white border-none h-14 text-xs uppercase tracking-widest font-bold">
+              Explorar Pilar <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
