@@ -20,6 +20,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { name: "Inicio", href: "/" },
@@ -83,12 +84,14 @@ export default function Navbar() {
 
           <div className="h-4 w-px bg-black/10 mx-2" />
 
+          <ThemeToggle />
           <Button variant="ghost" size="icon" render={<Link href="/admin"><User className="h-4 w-4" /></Link>} className="rounded-full hover:bg-black/5" />
         </div>
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex items-center gap-4">
-           <Button variant="ghost" size="icon" render={<Link href="/admin"><User className="h-4 w-4" /></Link>} className="rounded-full" />
+          <ThemeToggle />
+          <Button variant="ghost" size="icon" render={<Link href="/admin"><User className="h-4 w-4" /></Link>} className="rounded-full" />
           
           <Sheet>
             <SheetTrigger render={<Button variant="ghost" size="icon" className="rounded-full"><Menu className="h-5 w-5" /></Button>}>
